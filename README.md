@@ -1,5 +1,10 @@
 # Stock price prediction
 
+## Motivation
+
+The correlation between stock prices and news headlines highlights how global and local events significantly influence market movements. This observation inspires the development of a deep learning neural network designed to analyze news headlines and predict next-day stock prices for a specific market. The proposed model leverages historical data, aligning stock prices with relevant news, to train the network effectively. The primary challenge lies in curating and preparing this data accurately.
+
+For this project, datasets from Kaggle, specifically Dow Jones stock prices and Reddit news headlines, have been utilized.
 
 ## Problem statement & Reference Architecture
 
