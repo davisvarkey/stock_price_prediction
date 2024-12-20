@@ -6,6 +6,8 @@ The correlation between stock prices and news headlines highlights how global an
 
 For this project, datasets from Kaggle, specifically Dow Jones stock prices and Reddit news headlines, have been utilized.
 
+![basic](resources/textmining.png)
+
 ## Problem statement & Reference Architecture
 
 - Aim: Use Reddit News Headlines to predict the movement of Dow Jones Industrial Average.
