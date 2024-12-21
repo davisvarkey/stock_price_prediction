@@ -48,11 +48,11 @@ These two datasets needs to be combined by using date column to make one single 
 
 In this architecure, combination of Convolutional 1D and Recurrent Neural Network is used. 1D CNN to extract meaningful features which results in much shorter sequences in a much faster way. You can then feed this vector to an RNN in the same way as one would feed a sentence.
 
-![cnn-rnn](resources/cnn-1d-rnn.jpg)
+![cnn-rnn](resources/CNN_RNN_Architecure.jpg)
 
 As you can see in the architecture 
 
-
+![cnn-rnn](resources/cnn-1d-rnn.jpg)
 
 
 ## Problem statement & Reference Architecture
