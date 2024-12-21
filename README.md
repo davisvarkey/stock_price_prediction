@@ -28,10 +28,12 @@ Lets look at a datapoint for a particular day from the datasets
 
 News as of 2016-07-01 from the News dataset is given below:
 
-### **Date,News
+### Date,News
 
 `2016-07-01,"A 117-year-old woman in Mexico City finally received her birth certificate, and died a few hours later. Trinidad Alvarez Lira had waited years for proof that she had been born in 1898."
+
 2016-07-01,IMF chief backs Athens as permanent Olympic host
+
 2016-07-01,"The president of France says if Brexit won, so can Donald Trump"`
 
 2016-07-01,British Man Who Must Give Police 24 Hours' Notice of Sex Threatens Hunger Strike: The man is the subject of a sexual risk order despite having never been convicted of a crime.
