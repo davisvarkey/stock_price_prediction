@@ -33,7 +33,7 @@ News as of 2016-07-01 from the News dataset is given below:
 DowJones Stock market index as of 2016-07-01 from DowJones dataset is given below:
 
 `Date,Open,High,Low,Close,Volume,Adj Close
-                                                                           2016-07-01,17924.240234,18002.380859,17916.910156,17949.369141,82160000,17949.369141`
+ 2016-07-01,17924.240234,18002.380859,17916.910156,17949.369141,82160000,17949.369141`
 
 These two datasets needs to be combined by date to make one single dataset for further processing.
 
