@@ -8,7 +8,7 @@ Here, we'll try to model this relationship between the news and the stock market
 
 ## Table of Contents
 
-- [System Design](#system_design)
+- [System Overview](#system_overview)
 - [Dataset Prepration](#general-information)
 - [Model Architecture](#model-architecture)
 - [Model Building](#model-architecture)
