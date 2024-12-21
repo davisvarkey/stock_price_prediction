@@ -38,7 +38,7 @@ DowJones Stock market index as of 2016-07-01 from DowJones dataset is given belo
 
  `2016-07-01,17924.240234,18002.380859,17916.910156,17949.369141,82160000,17949.369141`
 
-These two datasets needs to be combined by using date column to make one single dataset to be used for training the model. Stock market opening price is used as label while News of previoud day is used as features.
+These two datasets needs to be combined by using date column to make one single dataset to be used for training the model. Stock market opening price is used as label while News of previous day is used as features to train the model. Once the model is trained, News of a particular day can be fed into the model to predict the stock market opening price. This is illustrated in the diagram below
 
 ![basic](resources/textmining.png)
 
@@ -50,7 +50,15 @@ In this architecure, combination of Convolutional 1D and Recurrent Neural Networ
 
 ![cnn-rnn](resources/CNN_RNN_Architecure.jpg)
 
-As you can see in the architecture 
+As you can see in the architecture, multiple convolutional layers are applied in parallel to the 'feature representation' of the text. The feature representation of the text is represented using glove vector representation. The output of the multiple convolutional layers are concatenated and RNN layer works on the top of it. 
+ 
+A fully-connected layer sits on the top of RNN and since it is regression problem, there will be no activation to bound the output. 
+
+![cnn-rnn](resources/model_summary.jpg)
+
+
+
+
 
 ![cnn-rnn](resources/cnn-1d-rnn.jpg)
 
