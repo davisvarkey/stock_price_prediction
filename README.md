@@ -30,13 +30,15 @@ News as of 2016-07-01 from the News dataset is given below:
 
 ![basic](resources/News_2016_07_01.png)
 
+
 DowJones Stock market index as of 2016-07-01 from DowJones dataset is given below:
+
 
 `Date,Open,High,Low,Close,Volume,Adj Close`
 
  `2016-07-01,17924.240234,18002.380859,17916.910156,17949.369141,82160000,17949.369141`
 
-These two datasets needs to be combined by date to make one single dataset for further processing.
+These two datasets needs to be combined by using date column to make one single dataset to be used for training the model. Stock market opening price is used as label while News of previoud day is used as features.
 
 ![basic](resources/textmining.png)
 
@@ -48,7 +50,7 @@ In this architecure, combination of Convolutional 1D and Recurrent Neural Networ
 
 ![cnn-rnn](resources/cnn-1d-rnn.jpg)
 
-
+As you can see in the architecture 
 
 
 
