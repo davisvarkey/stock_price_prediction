@@ -19,10 +19,13 @@ Here, we'll try to model this relationship between the news and the stock market
 
 <!-- You can include any other section that is pertinent to your problem -->
 
-## System Design
+## System Overview
 
 ![basic](resources/basic_intent.png)
 
+The above image represents a very high level information about the stock market prediction system. User will feed news headlines for a particular day. These sentences will then be converted to word embeddings and fed to CNN. CNN will extract features out of these sentence and the concantinated sequences will then pass on to RNN for learning the sentence sequences for that day. Finally the sentence embeddings will pass to the fully connected layer to output the stock market opening price.
+
+All these steps are implemented in the notebook attached with the project. You can open it google colab to run to build the model and start predict the stock market price. Note that the dataset used for this trainng is old one. So inorder to build model to be used in a particular market and relavent to current date, you will have to prepate the data accordinlgy.
 
 ## Dataset Prepration
 
@@ -68,15 +71,6 @@ The below image is the snapshot of the actual model architecture taken from Kera
 ![cnn-rnn](resources/cnn-1d-rnn.jpg)
 
 
-## Problem statement & Reference Architecture
-
-- Aim: Use Reddit News Headlines to predict the movement of Dow Jones Industrial Average.
-
-- Data Source: https://www.kaggle.com/aaron7sun/stocknews
-
-- Data Description: Dow Jones details on Open, High, Low and Close for each day from 2008-08-08 to 2016-07-01 and headlines for those dates from Reddit News.
-
-- Methodology: For this project, we will use GloVe to create our word embeddings and CNNs followed by LSTMs to build our model. This model is based off the work done in this paper https://www.aclweb.org/anthology/C/C16/C16-1229.pdf.
 
 
 
