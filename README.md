@@ -54,10 +54,10 @@ As you can see in the architecture, multiple convolutional layers are applied in
  
 A fully-connected layer sits on the top of RNN and since it is regression problem, there will be no activation to bound the output. 
 
-![cnn-rnn](resources/model_summary.jpg)
+![cnn-rnn](resources/model_summary.png)
 
 
-![cnn-rnn](resources/training_log.jpg)
+![cnn-rnn](resources/training_log.png)
 
 
 ![cnn-rnn](resources/cnn-1d-rnn.jpg)
