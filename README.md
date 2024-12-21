@@ -63,20 +63,24 @@ As shown in the architecture, multiple convolutional layers are applied in paral
 
 A fully connected layer sits on top of the RNN. Since this is a regression problem, there is no activation function to bound the output.
 
-The image below shows the actual model architecture, captured from the Keras sequential model summary. The model architecture can be fine-tuned with various combinations of convolutional, dropout, pooling, and RNN layers to build a better-performing model:
+The image below shows the actual model architecture, captured from the Keras sequential model summary. The model architecture can be fine-tuned with various combinations of convolutional, dropout, pooling, and different variences of RNN like LSTM, GRU to build a better-performing model:
 
 ![cnn-rnn](resources/model_summary.png)
 
+
+
 ## Deep dive
 
+Below picture represents the data transformation as it goes through different layers of the network.
 
 ![cnn-rnn](resources/cnn-1d-rnn.jpg)
 
 
 ## Model 1 Evaluation
 
-![Model Evaluation](./model-1-evaluation.png)
+![Model Evaluation](./model_evaluation.jpg)
 
+I found that the predictions are most accurate when there is no padding included in the input data. In the create_news variable, I have some default news that you can use, which is from April 30th, 2017. Just change the text to whatever you want, then see the impact your new headline will have.
 
 ## Technologies Used
 
