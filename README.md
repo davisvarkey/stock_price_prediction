@@ -8,6 +8,7 @@ Here, we'll try to model this relationship between the news and the stock market
 
 ## Table of Contents
 
+- [System Design](#system_design)
 - [Dataset Prepration](#general-information)
 - [Model Architecture](#model-architecture)
 - [Model Building](#model-architecture)
@@ -17,6 +18,11 @@ Here, we'll try to model this relationship between the news and the stock market
 - [Collaborators](#collaborators)
 
 <!-- You can include any other section that is pertinent to your problem -->
+
+## System Design
+
+![basic](resources/basic_intent.png)
+
 
 ## Dataset Prepration
 
@@ -54,10 +60,9 @@ As you can see in the architecture, multiple convolutional layers are applied in
  
 A fully-connected layer sits on the top of RNN and since it is regression problem, there will be no activation to bound the output. 
 
+The below image is the snapshot of the actual model architecture taken from Keras sequential model summary. We can tweak the model architecure with different combination of CNN convolutional, dropout, pooling layers and RNN layers to build better performing model
+
 ![cnn-rnn](resources/model_summary.png)
-
-
-![cnn-rnn](resources/training_log.png)
 
 
 ![cnn-rnn](resources/cnn-1d-rnn.jpg)
@@ -72,15 +77,6 @@ A fully-connected layer sits on the top of RNN and since it is regression proble
 - Data Description: Dow Jones details on Open, High, Low and Close for each day from 2008-08-08 to 2016-07-01 and headlines for those dates from Reddit News.
 
 - Methodology: For this project, we will use GloVe to create our word embeddings and CNNs followed by LSTMs to build our model. This model is based off the work done in this paper https://www.aclweb.org/anthology/C/C16/C16-1229.pdf.
-
-![basic](resources/basic_intent.png)
-
-
-## Pictorial representation of skin types
-
-![skincancertypes](./skin_cancer_types.png)
-
-The aim of this task is to assign a specific class label to a particular type of skin cancer.
 
 
 
