@@ -30,19 +30,33 @@ News as of 2016-07-01 from the News dataset is given below:
 
 Date,News
 2016-07-01,"A 117-year-old woman in Mexico City finally received her birth certificate, and died a few hours later. Trinidad Alvarez Lira had waited years for proof that she had been born in 1898."
+
 2016-07-01,IMF chief backs Athens as permanent Olympic host
+
 2016-07-01,"The president of France says if Brexit won, so can Donald Trump"
+
 2016-07-01,British Man Who Must Give Police 24 Hours' Notice of Sex Threatens Hunger Strike: The man is the subject of a sexual risk order despite having never been convicted of a crime.
+
 2016-07-01,100+ Nobel laureates urge Greenpeace to stop opposing GMOs
+
 2016-07-01,Brazil: Huge spike in number of police killings in Rio ahead of Olympics
+
 2016-07-01,Austria's highest court annuls presidential election narrowly lost by right-wing candidate.
+
 2016-07-01,"Facebook wins privacy case, can track any Belgian it wants: Doesn't matter if Internet users are logged into Facebook or not"
+
 2016-07-01,"Switzerland denies Muslim girls citizenship after they refuse to swim with boys at school: The 12- and 14-year-old will no longer be considered for naturalised citizenship because they have not complied with the school curriculum, authorities in Basel said"
+
 2016-07-01,"China kills millions of innocent meditators for their organs, report finds"
+
 2016-07-01,"France Cracks Down on Factory Farms - A viral video campaign has moved the govt to act. In footage shared widely online, animals writhe in pain as they bleed to death or are dismembered, in violation of rules requiring they be rendered unconscious before slaughter."
+
 2016-07-01,Abbas PLO Faction Calls Killer of 13-Year-Old American-Israeli Girl a Martyr
+
 2016-07-01,Taiwanese warship accidentally fires missile towards China
+
 2016-07-01,"Iran celebrates American Human Rights Week, mocks U.S. rights record"
+
 2016-07-01,U.N. panel moves to curb bias against L.G.B.T. people despite fierce resistance from Muslim and African countries.
 2016-07-01,"The United States has placed Myanmar, Uzbekistan, Sudan and Haiti on its list of worst human trafficking offenders."
 2016-07-01,S&amp;P revises European Union credit rating to 'AA' from 'AA+'
@@ -58,6 +72,7 @@ Date,News
 DowJones Stock market index as of 2016-07-01 from DowJones dataset is given below:
 
 Date,Open,High,Low,Close,Volume,Adj Close
+
 2016-07-01,17924.240234,18002.380859,17916.910156,17949.369141,82160000,17949.369141
 
 These two datasets needs to be combined by date to make one single dataset for further processing.
