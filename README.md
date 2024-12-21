@@ -30,7 +30,7 @@ News as of 2016-07-01 from the News dataset is given below:
 
 ### **Date,News
 
-`2016-07-01`,"A 117-year-old woman in Mexico City finally received her birth certificate, and died a few hours later. Trinidad Alvarez Lira had waited years for proof that she had been born in 1898."
+`2016-07-01,"A 117-year-old woman in Mexico City finally received her birth certificate, and died a few hours later. Trinidad Alvarez Lira had waited years for proof that she had been born in 1898."`
 
 2016-07-01,IMF chief backs Athens as permanent Olympic host`
 
