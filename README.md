@@ -30,9 +30,9 @@ News as of 2016-07-01 from the News dataset is given below:
 
 ### **Date,News
 
-*** 2016-07-01,"A 117-year-old woman in Mexico City finally received her birth certificate, and died a few hours later. Trinidad Alvarez Lira had waited years for proof that she had been born in 1898."
+` 2016-07-01,"A 117-year-old woman in Mexico City finally received her birth certificate, and died a few hours later. Trinidad Alvarez Lira had waited years for proof that she had been born in 1898."
 
-2016-07-01,IMF chief backs Athens as permanent Olympic host
+2016-07-01,IMF chief backs Athens as permanent Olympic host`
 
 2016-07-01,"The president of France says if Brexit won, so can Donald Trump"
 
@@ -59,9 +59,13 @@ News as of 2016-07-01 from the News dataset is given below:
 2016-07-01,"Iran celebrates American Human Rights Week, mocks U.S. rights record"
 
 2016-07-01,U.N. panel moves to curb bias against L.G.B.T. people despite fierce resistance from Muslim and African countries.
+
 2016-07-01,"The United States has placed Myanmar, Uzbekistan, Sudan and Haiti on its list of worst human trafficking offenders."
+
 2016-07-01,S&amp;P revises European Union credit rating to 'AA' from 'AA+'
+
 2016-07-01,India gets $1 billion loan from World Bank for solar mission
+
 2016-07-01,U.S. sailors detained by Iran spoke too much under interrogation: Navy
 2016-07-01,Mass fish kill in Vietnam solved as Taiwan steelmaker accepts responsibility for pollution
 2016-07-01,"Philippines president Rodrigo Duterte urges people to kill drug addicts | Duterte, 71, won power in a landslide after a campaign dominated by threats to kill tens of thousands in a war on crime"
