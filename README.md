@@ -57,7 +57,7 @@ A fully-connected layer sits on the top of RNN and since it is regression proble
 ![cnn-rnn](resources/model_summary.jpg)
 
 
-
+![cnn-rnn](resources/training_log.jpg)
 
 
 ![cnn-rnn](resources/cnn-1d-rnn.jpg)
