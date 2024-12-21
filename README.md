@@ -78,7 +78,7 @@ Below picture represents the data transformation as it goes through different la
 
 ## Model 1 Evaluation
 
-![Model Evaluation](./model_evaluation.jpg)
+![cnn-rnn](resources/model_evaluation.jpg)
 
 I found that the predictions are most accurate when there is no padding included in the input data. In the create_news variable, I have some default news that you can use, which is from April 30th, 2017. Just change the text to whatever you want, then see the impact your new headline will have.
 
