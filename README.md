@@ -11,8 +11,8 @@ This project aims to model the relationship between news headlines and the stock
 - [System Overview](#system_overview)
 - [Dataset Prepration](#general-information)
 - [Model Architecture](#model-architecture)
-- [Model Building](#model-architecture)
 - [Model Summary](#model-summary)
+- [Deep Dive](#deep_dive)
 - [Model Evaluation](#model-evaluation)
 - [Technologies Used](#technologies-used)
 - [Collaborators](#collaborators)
@@ -67,34 +67,16 @@ The image below shows the actual model architecture, captured from the Keras seq
 
 ![cnn-rnn](resources/model_summary.png)
 
+## Deep dive
+
 
 ![cnn-rnn](resources/cnn-1d-rnn.jpg)
 
-
-
-
-
-## Model Summary
-
-![Model Architecture](./mode-1-summary.png)
 
 ## Model 1 Evaluation
 
 ![Model Evaluation](./model-1-evaluation.png)
 
-
-### **Note:**  Model 4 trained with augmented data, without batch normalization and a dropout layer before flatterning, that resulted well-balanced performance, displaying no signs of underfitting or overfitting.
-
-## Overall Observations:
-
-- The implementation of class rebalancing has notably enhanced the model's performance across both training and validation datasets.
-- The narrow divergence between training and validation accuracies underscores the robust generalization capability of the final CNN model.
-- The addition of batch normalization failed to enhance both training and validation accuracy.
-- Those classes have significant percentage of representation were predicted accurately and on the other hand those classes which have low representation were predicted incorrectly.
-- 'basal cell carcinoma' class which has 376 representation (third highest) predicted correctly.
-- 'melanoma' class which has 438 representation (second highest) predicted correctly.
-- 'nevus' class which has 357 representation (fourth highest) predicted correctly.
-- 'pigmented benign keratosis' class which has 462 representation (highest) predicted correctly.
 
 ## Technologies Used
 
