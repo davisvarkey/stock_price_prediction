@@ -28,8 +28,9 @@ Lets look at a datapoint for a particular day from the datasets
 
 News as of 2016-07-01 from the News dataset is given below:
 
-Date,News
-2016-07-01,"A 117-year-old woman in Mexico City finally received her birth certificate, and died a few hours later. Trinidad Alvarez Lira had waited years for proof that she had been born in 1898."
+### **Date,News
+
+*** 2016-07-01,"A 117-year-old woman in Mexico City finally received her birth certificate, and died a few hours later. Trinidad Alvarez Lira had waited years for proof that she had been born in 1898."
 
 2016-07-01,IMF chief backs Athens as permanent Olympic host
 
@@ -67,11 +68,11 @@ Date,News
 2016-07-01,Spain arrests three Pakistanis accused of promoting militancy
 2016-07-01,"Venezuela, where anger over food shortages is still mounting, continued to be roiled this week by angry protests and break-ins of grocery stores and businesses that have left five dead, at least 30 injured and 200 arrested, according to various news reports."
 2016-07-01,"A Hindu temple worker has been killed by three men on a motorcycle, local police have said. More than 40 people have been killed in attacks blamed on Islamist militants in Bangladesh since February 2013, including secular bloggers, academics, gay rights activists and members of religious minorities."
-2016-07-01,"Ozone layer hole seems to be healing - US &amp; UK team shows it's shrunk &amp; may slowly recover. ""If you had to have an ozone hole anywhere in the world, it'd be Antarctica because its not teeming with life. It showed us if we didnt back off with these chemicals, wed have a crisis."""
+2016-07-01,"Ozone layer hole seems to be healing - US &amp; UK team shows it's shrunk &amp; may slowly recover. ""If you had to have an ozone hole anywhere in the world, it'd be Antarctica because its not teeming with life. It showed us if we didnt back off with these chemicals, wed have a crisis.""" ***
 
 DowJones Stock market index as of 2016-07-01 from DowJones dataset is given below:
 
-Date,Open,High,Low,Close,Volume,Adj Close
+### ** Date,Open,High,Low,Close,Volume,Adj Close
 
 2016-07-01,17924.240234,18002.380859,17916.910156,17949.369141,82160000,17949.369141
 
