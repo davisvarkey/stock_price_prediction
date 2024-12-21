@@ -2,9 +2,9 @@
 
 ## Motivation
 
-A stock market index gets affected by the news headlines that run daily on television and newspapers along with a multitude of other factors. Highly negative news impacts the stock market negatively and positive news impacts the stock market positively. This observation inspires to design and build a deep learning neural network which analyze news headlines and predict next-day stock prices for a specific market.
- 
-Here, we'll try to model this relationship between the news and the stock market price of an index. Our assumption in modelling the stock price in this exercise is that news headlines that run on a particular day affect the opening stock price of an index the very next morning.
+A stock market index is significantly influenced by the news headlines that appear daily on television and newspapers, along with various other factors. Highly negative news impacts the stock market adversely, while positive news has a favorable effect. This observation inspires the design and development of a deep learning neural network that analyzes news headlines and predicts next-day stock prices for a specific market.
+
+This project aims to model the relationship between news headlines and the stock market price of an index. The assumption is that news headlines from a particular day influence the opening stock price of an index on the following day.
 
 ## Table of Contents
 
@@ -23,31 +23,31 @@ Here, we'll try to model this relationship between the news and the stock market
 
 ![basic](resources/basic_intent.png)
 
-The above image represents a very high level information about the stock market prediction system. User will feed news headlines for a particular day. These sentences will then be converted to word embeddings and fed to CNN. CNN will extract features out of these sentence and the concantinated sequences will then pass on to RNN for learning the sentence sequences for that day. Finally the sentence embeddings will pass to the fully connected layer to output the stock market opening price.
+The image above represents a high-level overview of the stock market prediction system. Users input news headlines for a particular day. These sentences are then converted to word embeddings and fed into a CNN. The CNN extracts features from these sentences, and the concatenated sequences are passed on to an RNN to learn the sentence sequences for that day. Finally, the sentence embeddings are passed to a fully connected layer to output the stock market opening price.
 
-All these steps are implemented in the notebook attached with the project. You can open it google colab to run to build the model and start predict the stock market price. Note that the dataset used for this trainng is old one. So inorder to build model to be used in a particular market and relavent to current date, you will have to prepate the data accordinlgy.
+All these steps are implemented in the notebook attached to the project. You can open it in Google Colab to run, build the model, and start predicting stock market prices. Note that the dataset used for this training is historical. To build a model relevant to a particular market and current date, you will need to prepare the dataset accordingly.
 
 ## Dataset Prepration
 
-The primary challenge of building deep learning model is sourcing specific dataset for a given problem, and curating and preparing accurate dataset.
+The primary challenge in building a deep learning model is sourcing specific datasets for a given problem and curating accurate data.
 
-For this project, datasets from Kaggle, specifically Dow Jones stock prices and Reddit news headlines, have been utilized. The dataset contains historical data from 2008 to 2016.  The stock prices and the relevant news of each day has to be combined to form one dataset to feed into the network.
+For this project, datasets from Kaggle, specifically Dow Jones stock prices and Reddit news headlines, have been utilized. The dataset contains historical data from 2008 to 2016. The stock prices and relevant news of each day are combined to form one dataset to feed into the network.
 
-Lets look at a datapoint for a particular day from the datasets
+Here’s an example of a data point for a particular day from the datasets:
 
-News as of 2016-07-01 from the News dataset is given below:
+News from 2016-07-01 in the news dataset:
 
 ![basic](resources/News_2016_07_01.png)
 
 
-DowJones Stock market index as of 2016-07-01 from DowJones dataset is given below:
+Dow Jones Stock Market Index as of 2016-07-01 from the Dow Jones dataset:
 
 
 `Date,Open,High,Low,Close,Volume,Adj Close`
 
  `2016-07-01,17924.240234,18002.380859,17916.910156,17949.369141,82160000,17949.369141`
 
-These two datasets needs to be combined by using date column to make one single dataset to be used for training the model. Stock market opening price is used as label while News of previous day is used as features to train the model. Once the model is trained, News of a particular day can be fed into the model to predict the stock market opening price. This is illustrated in the diagram below
+These two datasets need to be combined using the date column to make one single dataset for training. The stock market opening price is used as the label, while news from the previous day is used as the feature set to train the model. Once trained, the model can predict the stock market opening price using news from a particular day. This process is illustrated in the diagram below:
 
 ![basic](resources/textmining.png)
 
@@ -55,15 +55,15 @@ These two datasets needs to be combined by using date column to make one single 
 
 ### The CNN-RNN architecture
 
-In this architecure, combination of Convolutional 1D and Recurrent Neural Network is used. 1D CNN to extract meaningful features which results in much shorter sequences in a much faster way. You can then feed this vector to an RNN in the same way as one would feed a sentence.
+This architecture combines Convolutional 1D and Recurrent Neural Networks. 1D CNN extracts meaningful features, resulting in shorter sequences processed more efficiently. These vectors are then fed into an RNN in the same manner as feeding a sentence.
 
 ![cnn-rnn](resources/CNN_RNN_Architecure.jpg)
 
-As you can see in the architecture, multiple convolutional layers are applied in parallel to the 'feature representation' of the text. The feature representation of the text is represented using glove vector representation. The output of the multiple convolutional layers are concatenated and RNN layer works on the top of it. 
- 
-A fully-connected layer sits on the top of RNN and since it is regression problem, there will be no activation to bound the output. 
+As shown in the architecture, multiple convolutional layers are applied in parallel to the 'feature representation' of the text. The feature representation is generated using GloVe vector embeddings. The outputs of the multiple convolutional layers are concatenated, and the RNN layer works on top of this.
 
-The below image is the snapshot of the actual model architecture taken from Keras sequential model summary. We can tweak the model architecure with different combination of CNN convolutional, dropout, pooling layers and RNN layers to build better performing model
+A fully connected layer sits on top of the RNN. Since this is a regression problem, there is no activation function to bound the output.
+
+The image below shows the actual model architecture, captured from the Keras sequential model summary. The model architecture can be fine-tuned with various combinations of convolutional, dropout, pooling, and RNN layers to build a better-performing model:
 
 ![cnn-rnn](resources/model_summary.png)
 
