@@ -2,9 +2,35 @@
 
 ## Motivation
 
-The correlation between stock prices and news headlines highlights how global and local events significantly influence market movements. This observation inspires the development of a deep learning neural network designed to analyze news headlines and predict next-day stock prices for a specific market. The proposed model leverages historical data, aligning stock prices with relevant news, to train the network effectively. The primary challenge lies in curating and preparing this data accurately.
+A stock market index gets affected by the news headlines that run daily on television and newspapers along with a multitude of other factors. Highly negative news impacts the stock market negatively and positive news impacts the stock market positively. This observation inspires to design and build a deep learning neural network which analyze news headlines and predict next-day stock prices for a specific market.
+ 
+Here, we'll try to model this relationship between the news and the stock market price of an index. Our assumption in modelling the stock price in this exercise is that news headlines that run on a particular day affect the opening stock price of an index the very next morning.
 
-For this project, datasets from Kaggle, specifically Dow Jones stock prices and Reddit news headlines, have been utilized.
+## Table of Contents
+
+- [Dataset Prepration](#general-information)
+- [Model Architecture](#model-architecture)
+- [Model Building](#model-architecture)
+- [Model Summary](#model-summary)
+- [Model Evaluation](#model-evaluation)
+- [Technologies Used](#technologies-used)
+- [Collaborators](#collaborators)
+
+<!-- You can include any other section that is pertinent to your problem -->
+
+## Dataset Prepration
+
+
+The primary challenge lies in curating and preparing this data accurately.
+
+For this project, datasets from Kaggle, specifically Dow Jones stock prices and Reddit news headlines, have been utilized. he proposed model leverages historical data, aligning stock prices with relevant news, to train the network effectively. 
+
+The dataset comprises 2357 images depicting malignant and benign oncological conditions, sourced from the International Skin Imaging Collaboration (ISIC). These images were categorized based on the classification provided by ISIC, with each subset containing an equal number of images.
+
+![datasetgraph](./class_distribution.png)
+
+In order to address the challenge of class imbalance, the Augmentor Python package (https://augmentor.readthedocs.io/en/master/) was employed to augment the dataset. This involved generating additional samples for all classes, ensuring that none of the classes had insufficient representation.
+
 
 ![basic](resources/textmining.png)
 
@@ -20,24 +46,6 @@ For this project, datasets from Kaggle, specifically Dow Jones stock prices and 
 
 ![basic](resources/basic_intent.png)
 
-## Table of Contents
-
-- [General Info](#general-information)
-- [Model Architecture](#model-architecture)
-- [Model Summary](#model-summary)
-- [Model Evaluation](#model-evaluation)
-- [Technologies Used](#technologies-used)
-- [Collaborators](#collaborators)
-
-<!-- You can include any other section that is pertinent to your problem -->
-
-## General Information
-
-The dataset comprises 2357 images depicting malignant and benign oncological conditions, sourced from the International Skin Imaging Collaboration (ISIC). These images were categorized based on the classification provided by ISIC, with each subset containing an equal number of images.
-
-![datasetgraph](./class_distribution.png)
-
-In order to address the challenge of class imbalance, the Augmentor Python package (https://augmentor.readthedocs.io/en/master/) was employed to augment the dataset. This involved generating additional samples for all classes, ensuring that none of the classes had insufficient representation.
 
 ## Pictorial representation of skin types
 
