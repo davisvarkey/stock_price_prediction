@@ -20,12 +20,16 @@ Here, we'll try to model this relationship between the news and the stock market
 
 ## Dataset Prepration
 
+The primary challenge of building deep learning model is sourcing specific dataset for a given problem, and curating and preparing accurate dataset.
 
-The primary challenge lies in curating and preparing this data accurately.
+For this project, datasets from Kaggle, specifically Dow Jones stock prices and Reddit news headlines, have been utilized. The dataset contains historical data from 2008 to 2016.  The stock prices and the relevant news of each day has to be combined to form one dataset to feed into the network.
 
-For this project, datasets from Kaggle, specifically Dow Jones stock prices and Reddit news headlines, have been utilized. he proposed model leverages historical data, aligning stock prices with relevant news, to train the network effectively. 
 
-The dataset comprises 2357 images depicting malignant and benign oncological conditions, sourced from the International Skin Imaging Collaboration (ISIC). These images were categorized based on the classification provided by ISIC, with each subset containing an equal number of images.
+## Model Architecture
+
+### The CNN-RNN architecture
+
+![cnn-rnn](resources/cnn-1d-rnn.jpg)
 
 ![datasetgraph](./class_distribution.png)
 
@@ -53,11 +57,7 @@ In order to address the challenge of class imbalance, the Augmentor Python packa
 
 The aim of this task is to assign a specific class label to a particular type of skin cancer.
 
-## Model Architecture
 
-### The CNN-RNN architecture
-
-![cnn-rnn](resources/cnn-1d-rnn.jpg)
 
 ## Model Summary
 
